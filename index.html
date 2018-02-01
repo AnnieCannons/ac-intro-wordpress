@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<title>AnnieCannons slides</title>
+	<title>AnnieCannons Intro Wordpress Slides</title>
 
 	<meta name="description" content="AnnieCannons class slides">
 	<meta name="author" content="AnnieCannons">
@@ -29,494 +29,413 @@
 		<div class="slides">
 
 			<section>
-				<h2>Learning the Terminal and Git</h2>
+				<h1>Wordpress</h1>
+				<img src="images/giphy8.gif" alt="Wordpress Logo" />
 			</section>
 
 			<section>
-				<h2>What is a Shell?</h2>
-				<p>A text-based command interpreter</p>
-				<p>The most common shell (and default on OS X) is BASH</p>
-				<p>For OS X, use a shell via the “Terminal” app</p>
+				<h2>What is WordPress?</h2>
+				<h3>Official description from WordPress.org</h3>
+				<blockquote>
+					WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
+				</blockquote>
 			</section>
 
 			<section>
-				<h2>What is the Terminal?</h2>
-				<p>The terminal is an interface in which you can type and execute text based commands.</p>
-				<p class="fragment">This is how we access our Command Line Interface (CLI).</p>
-				<p class="fragment">aka: program like a hacker!</p>
-			</section>
-
-			<section>
-				<h2>What is the Terminal?</h2>
-				<img src="images/terminal.png" alt="">
-			</section>
-
-			<section>
-				<h2>Where to find the Terminal?</h2>
+				<h2>Why are we learning it?</h2>
 				<ul>
-					<li>Finder</li>
-					<li>Applications</li>
-					<li>Utilities</li>
+					<li>WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world (59.5% marketshare)</a>. </li>
+					<li>WordPress is used by 28.6% of the sites on the web.</li>
+					<li>WordPress 4.8 has been downloaded over 30,332,145 times</li>
 				</ul>
-				<p>Click and drag the icon into your dock, then double click to open.</p>
+				<img src="images/giphy9.gif" alt="Popular gif">
+			</section>
+			
+			<section>
+				<p>WordPress is free, open source, web-based software</p>
+				<img src="images/giphy2.gif" alt="World Gif" />
+				<p>WordPress core software is built by hundreds of community volunteers. People all around the word contribute to WordPress by either submitting bugfixes, testing, designing or writing code for the software.
+				</p>
+			</section>
+			
+			<section>
+				<h2>WordPress is website building framework</h2>
+				<p>
+					WordPress is a platform for building and designing a website.
+				</p>
+				<img src="images/giphy1.webp" alt="Fun Gif">
 			</section>
 
 			<section>
-				<h2>The Prompt</h2>
-				<p>Usually shows your username and computer name (hostname).</p>
-				<p>It indicates that the shell is ready for you to enter a command.</p>
-				<img src="images/prompt.png" alt="">
+				<img src="https://media1.tenor.com/images/cabaaf18bfde1e48924082e49e3f2c94/tenor.gif?itemid=6053185" alt="Willis Gif">
 			</section>
 
 			<section>
-				<h2>The Current Directory</h2>
-				<p>pwd (Print Working Directory)</p>
-				<p>Type it whenever you want to see what directory (folder) you’re in.</p>
-				<p>TRY It!</p>
-			</section>
-
-			<section>
-				<h2>Directories</h2>
-				<p>Containers for files or other directories.</p>
-				<p>Also referred to as "folders".</p>
-				<p>Nested files and directories can be referenced using paths.</p>
-			</section>
-
-			<section>
-				<h2>UNIX File System</h2>
-				<img src="images/unix.png" alt="">
-				<p>In OS X, /home/you becomes /Users/you</p>
-			</section>
-
-			<section>
-				<h2>Server OS</h2>
-				<img src="images/unixtree.png" alt="">
-			</section>
-
-			<section>
-				<h2>File System Structure</h2>
-				<p>Varies between systems, but some common folders:</p>
-				<ul>
-					<li>/bin: Basic commands</li>
-					<li>/etc: System config files</li>
-					<li>/tmp: Temporary files</li>
-					<li>/usr: Regular user tools</li>
-					<li>/usr/local: Installed user software</li>
-					<li>/var: Data used by system</li></li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Shortcuts</h2>
-				<ul>
-					<li>Current Directory: (.)</li>
-					<li>Parent Directory: (..)</li>
-					<li>Home Directory: (~)</li>
-					<li>Root Directory: (/)</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Create your project</h2>
-				<p>How to create a file system for your website in your terminal.</p>
-				<ul>
-					<li class="fragment">ls: List what's in here</li>
-					<li class="fragment">cd: Change directory</li>
-					<li class="fragment">mkdir: Make a new directory</li>
-					<li class="fragment">touch: create or update an existing file's timestamp.The touch command expects the name of your new file as an argument.</li>
-					<li class="fragment">mv: move a file from one place to another (important note!)</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Flags</h2>
-				<p>Some commands have additional options that you can specify by using flags.</p>
-				<p>Flags are preceded by a hyphen, and are often a single character.</p>
-				<img src="images/ls.png" alt="">
-				<p>ls -a = show hidden files</p>
-				<p>ls -l = use a “long list” format (shows more verbose output)</p>
-			</section>
-
-			<section> 
-				<h2>Terminal Commands</h2>
-				<ul>
-					<li class="fragment">The left/right arrow keys let you edit within a command
-					<li class="fragment">The up/down arrow keys let you select previous commands
-					<li class="fragment">CTRL+a goes to beginning of command, CTRL+e to the end.
-					<li class="fragment">The tab auto-completes filenames! Best friend!
-				</ul>
-     		</section>
-
-			 <section>
-				 <h2>Making and Removing Directories</h2>
-				 <p>Use the mkdir command to create a new empty directory.</p>
-				 <p>Use the rmdir command to remove an empty directory.</p>
-				 <p>Use rm -r to remove a non-empty directory...be careful!</p>
-				 <p>All 3 commands expect the name of a directory as an argument.</p>
-			 </section>
-    
-			<section>
-				<h2>Task I:</h2>
-				<ul>
-					<li>Create a "dev" folder in your main Documents folder</li>
-					<li>Move all of your current code folders from your Desktop to this file</li>
-					<li>Example: mv ~/Desktop/codingPractice ~/Documents/dev</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Task II:</h2>
-				<p>Use the Terminal to make the folder system for your new Portfolio Project</p>
-				<ul>
-					<li>Create the root folder in your new dev folder</li>
-					<li>Make sure to add folders for your CSS and JS</li>
-					<li>Add a new index.html file</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>View a File</h2>
-				<p>cat, more, less</p>
-				<p>Use the cat command to output (catenate) the contents of a file to the console.</p>
-				<p>Use the more or less commands to read a file:</p>
-					<ul>
-						<li>more allows you to step through the contents of a file a screen at a time</li>
-						<li>less allows you to step backwards or forwards</li>
-						<li>Press q to exit out of this mode</li>
-					</ul>
-			</section>
-
-			<section>
-				<h2>Try this!</h2>
-				<p>cat /var/log/wifi.log </p>
-			</section>
-
-			<section>
-				<h2>Edit a File</h2>
-				<p>You can use various editors built into bash:</p>
-				<ul>
-					<li>$ vi myfile.txt</li>
-					<li>$ emacs myfile.txt</li>
-					<li>$ pico myfile.txt</li>
-				</ul>
-				<p>Or on a Mac, you can open with any desktop app:</p>
-<pre><code>
-$ open -a TextEdit myfile.txt
-</code></pre>
-				<p>Or with the default editor:</p>
-<pre><code>
-$ open -t myfile.txt	
-</code></pre>
-			</section>
-
-			<section>
-				<h2>Fun tools</h2>
-				<ul>
-					<li>ping</li>
-					<li>traceroute</li>
-					<li></li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Resources</h2>
-				<ul>
-					<li><a href="https://code.tutsplus.com/tutorials/how-to-customize-the-command-prompt--net-20586">How to Customize the Command Prompt</a></li>
-					<li><a href="https://learncodethehardway.org/unix/">Learn Bash</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>GIT</h2>
-			</section>
-
-			<section>
-				<h2>Version Control System</h2>
-				<p>What is it?</p>
-				<ul>
-					<li class="fragment">A system that keeps records of your changes.</li>
-					<li class="fragment">Allows for collaborative development</li>
-					<li class="fragment">Allows you to know who made what changes and when.</li>
-					<li class="fragment">Allows you to revert any changes and go back to a previous state.</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Example Flow</h2>
-				<p>Alice creates this code and commits it as version 0:</p>
-<pre><code class="js" data-trim contenteditable>
-function addTwo(num){
-	return num + 2;
-}
-</code></pre>
-				<p class="fragment">Alice edits and commits as version 1:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-function addThree(num){
-	return num + 3;
-}
-</code></pre>
-			</section>
-
-			<section>
-				<h2>Example flow 2</h2>
-				<p>Bob pulls the code from version 0 and edits:</p>
-<pre><code class="js" data-trim contenteditable>
-function addTwo(num){
-	if (num === Infinity){
-		alert("Cannot add to infinity!");
-	}
-	return num + 2;
-}
-</code></pre>
-				<p class="fragment">Bob pulls Alice's changes and it merges them:</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-function addThree(num){
-	if (num === Infinity){
-		alert("Cannot add to infinity!");
-	}
-	return num + 3;
-}
-</code></pre>
-			</section>
-
-			<section>
-				<h2>Version Control</h2>
-				<p>Version control systems are categorized as either "centralized" or "distributed"</p>
-				<p class="fragment"><span style="color: yellow">Centralized version control systems </span>are based on the idea that there is a single "central" copy of your project somewhere (probably on a server), and programmers will "commit" their changes to this central copy.</p>
-				<p class="fragment">In <span style="color: yellow">distributed systems</span>, every developers "clones" a copy of a repository and has the full history of the project on their own hard drive.</p>
-			</section>
-
-			<section>
-				<h2>Centralized vs distributed systems</h2>
-				<img src="images/versioncontrol" alt="">
-			</section>
-
-			<section>
-				<h2>What is Git?</h2>
-				<p class="fragment">Git is a popular version control system! There are others but this is considered by many to be the best.</p>
-				<p class="fragment">Git allows groups of people to work on the same documents (often code) at the same time, and without stepping on each other's toes. </p>
-			</section>
-
-			<section>
-				<h2>Goals of Git Design</h2>
-				<ul>
-					<li class="fragment">Fast--add to you team and code base quickly</li>
-					<li class="fragment">Each commit has a corresponding hash (it tracks the changes from everyone)</li>
-					<li class="fragment">Everyone has a local copy of the history of the source code</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Install git	</h2>
-				<a href="http://git-scm.com/downloads">http://git-scm.com/downloads</a>
-			</section>
-
-			<section>
-				<h2>How does git work?</h2>
-				<p class="fragment">It can be complicated at first, but there are a few key concepts. Don't get too worried about the names -- you will get them over time!</p>
-				<p class="fragment">Important GIT terms in the following slides will be in <span style="color:yellow">yellow</span>.</p>
-				<img src="https://media.tenor.co/images/4d46caa0ab53ae04ce457eba29721f19/raw" alt="" class="fragment">
-			</section>
-
-			<section>
-				<h2>Key Concept:<span style="color:yellow">Snapshots</span></h2>
-				<ul>
-					<li class="fragment">The way git keeps track of your code history</li>
-					<li class="fragment">Essentially records what all your files look like as a given point in time</li>
-					<li class="fragment">You decide when to take a snapshot and of what files</li>
-					<li class="fragment">You can do back and visit any snapshot</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Key Concept:<span style="color:yellow">Commit</span></h2>
-				<ul>
-					<li class="fragment">The act of creating a snapshot</li>
-					<li class="fragment">Can be a noun or a verb ("I committed code" or "I just made a new commit"</li>
-					<li class="fragment">Essentially, a project is made up of a bunch of commits</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Key Concept:<span style="color:yellow">Commit</span></h2>
-				<p>Commits contain three pieces of information.</p>
+				<h2>Wordpress: The Three Components</h2>
 				<ol>
-					<li class="fragment">Information about how the files changed from previously</li>
-					<li class="fragment">A reference to the commit that came before it (this is called the parent commit)</li>
-					<li class="fragment">A hashcode name (this will look something like: fb2dec48987dfgdf8798dfg7dfg87dfg79sdsfsdf7sdf78h9n</li>
+					<li class="fragment">Server-side code (PHP) and Database (mySQL)</li>
+					<li class="fragment">Content Management System and Dashboard</li>
+					<li class="fragment">Access to Themes and Plugins</li>
+				</ol>
+			</section>
+			
+			<section>
+				<h2>What is a content management system?</h3>
+				<p>A program that allows site owners to manage their site content via an easy-to-use admin or dashboard.
+				</p>
+				<img src="images/dashboard.png" alt="Wordpress Dashboard">
+			</section>
+
+			<section>
+				<h2>CMS</h2>
+				<img src="images/cms1.png" alt="CMS outline" width="500px">
+			</section>
+
+			<section>
+				<h2>CMS</h2>
+				<img src="images/cms2.png" alt="CMS Breakdown" width="500px">
+			</section>
+			
+			<section>
+				<h2>WordPress.org vs. WordPress.com</h2>
+				<ul>
+					<li><strong style="color: yellow;">WordPress.org</strong> - Web software used to build a website on a hosting account with a domain name. Sites can be built and modified using themes, plugins or custom code</li> <br />
+
+					<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons), theme choices are limited, plugins can not be installed and code can not be modified</li>
+				</ul>
+				<a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank">
+					<i class="fa fa-info-circle" aria-hidden="true"></i>
+				</a>
+			</section>
+
+			<section>
+				<h2>Local Install</h2>
+				<h3>What Is Needed For Setting Up Your Local Environment</h3>
+				<ol>
+					<li class="fragment">A Web browser. Installation is performed step-by-step on a web browser</li>
+					<li class="fragment">MAMP (an application you download) to run the server on your local computer</li>
+					<li class="fragment">The Wordpress code starter files</li>
 				</ol>
 			</section>
 
 			<section>
-				<h2>Key Concept:<span style="color:yellow">Repository</span></h2>
+				<h2>Directions!</h2>
+				<a href="https://docs.google.com/document/d/1r3jIlwQNADbWmpQvhvmWBViPfIGpmS9peLCyXcV4zkE/edit?usp=sharing">Google Doc Here</a>
+			</section>
+
+			<section>
+				<h2>Security</h2>
+				<h3>Being popular means you're a target</h3>
+				<p>
+					It is important to take security seriously when running a site that uses a CMS.
+				</p>
+			    <img src="images/giphy3.gif" alt="Security Gif">
+			</section>
+			
+			<section>
+				<h2>Security</h2>
+				<h3>During install</h3>
 				<ul>
-					<li class="fragment">Often called a 'repo'</li>
-					<li class="fragment">A collection of all the files and the history of all those files</li>
-					<li class="fragment">Consists of all of your commits</li>
-					<li class="fragment">Place where all you hard work is stored!</li>
+					<li>Make your database table prefix unique. Don't use "wp_" or "wordpress_"</li>
+					<li>Create a new database user, don't use the default</li>
+					<li>Make your database user password strong.</li>
+					<li><strong>Do not use "admin" as a username.</strong> "admin" used to be the default WordPress username. Use a unique username and a very strong Password</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Key Concept:<span style="color:yellow">Repository</span></h2>
+				<h2>A Tour of the Front End</h2>
+				<h3>WordPress comes with the default theme Twenty Seventeen</h3>
 				<ul>
-					<li class="fragment">Can live on a local machine (aka your computer) or on a remote server (like Github!)</li>
-					<li class="fragment">The act of copying a repository from a remote server is called <span style="color:yellow">cloning</span></li>
-					<li class="fragment">Cloning from a remote server allows teams to work together.</li>
+					<li>A sample post on the home page.</li>
+					<li>A sample page</li>
+					<li>A sample comment</li>
+					<li>A sample tag line "Just another WordPress site"</li>
+					<li>A set of sidebar widgets</li>
+				</ul>
+			</section>	
+			
+			<section>
+				<img src="images/giphy4.gif" alt="Bored Gif">
+			</section>
+			
+			<section>
+				<h2>A Tour of the Backend Admin</h2>
+				<h3>Located at: yourdomain.com/wp-admin/ </h3>
+				<p>
+					The admin is divided into 3 areas:
+					<ol>
+						<li>The top menu bar</li>
+						<li>The left-hand menu used to navigate to most admin functionality</li>
+						<li>The main content window where most admin functionality is performed</li>
+					</ol>
+				</p>	
+			</section>
+			
+			<section>
+				<h2>A Tour of the Backend Admin</h2>
+				<p><strong> Tip:</strong> Open the front end of your site in one browser tab and the backend in another so you can easily switch between the 2 as you make changes to your site.
+				</p>
+				<img src="images/giphy10.gif" alt="Coding Like A Boss">
+			</section>
+			
+			<section>
+				<h2>Setting Up Your Site</h2>
+				<h3>The Settings menu</h3>
+				<ul>
+					<li class="fragment"><strong>General:</strong> Title, tagline, site address, date format, etc.</li>
+					<li class="fragment"><strong>Writing:</strong> Post-related settings</li>
+					<li class="fragment"><strong>Reading:</strong>  Set site home page, # of posts, rss settings and search engine visibility</li>
+					<li class="fragment"><strong>Discussion:</strong> Manage comment settings</li>
+					<li class="fragment"><strong>Media:</strong> Make default image sizes and other media settings</li>
+					<li class="fragment"><strong>Permalinks:</strong> Define the structure of site URLs</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Exercise time!</h2>
+				<p>Some tasks to get you familiar with the Settings menu and dashboard</p>
+				<ul>
+					<li>Change the name of your site</li>
+					<li>Change the "Front page" of your site to the sample page </li>
+					<li>Change the Permalinks of yout page to be set by the Posts</li>
+				</ul>
+				<img src="images/giphy5.gif" alt="Its about to go down">
+			</section>
+			
+			<section>
+				<h2>Changing Site Appearance</h2>
+				<h3>The Appearance menu</h3>
+				<ul>
+					<li class="fragment"><strong>Themes:</strong> Manage the current theme in use and other installed themes</li>
+					<li class="fragment"><strong>Widgets:</strong> Manage widgets you can add to site sidebars or other "widgetized" areas</li>
+					<li class="fragment"><strong>Menus:</strong>  Manage navigation menus</li>
+					<li class="fragment" ><strong>Header:</strong> Manage header text and image</li>
+					<li class="fragment"><strong>Background:</strong> Manage background color and image</li>
+					<li class="fragment"><strong>Editor:</strong> Dangerous way to edit theme and plugin flies. This is disabled if you "harden" WordPress</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Key Concept:<span style="color:yellow">Repository</span></h2>
+				<h2>Adding Content</h2>
+				<h3>Pages and Posts</h3>
 				<ul>
-					<li class="fragment">The process of downloading commits that don't exist on your machine from a remote repository is called <span style="color:yellow">pulling</span> changes.</li>
-					<li class="fragment">The process of adding your local changes to the remote repository is called <span style="color:yellow">pushing</span> changes</li>
-					<p class="fragment"><iframe width="560" height="315" src="https://www.youtube.com/embed/vCadcBR95oU" frameborder="0" allowfullscreen></iframe>	</p>			</ul>
+					<li><strong>Pages:</strong> Regular static website pages with content</li>
+					<li><strong>Posts:</strong> Entries (like blog posts) that have a date, categories and tags assigned to them. They can be listed in a particular order (chronologically, alphabetically, etc.) and fed to other sites or blog readers via an RSS feed</li>
+				</ul>		
+				<a href="http://www.chaostoclarity.com/how-wordpress-works-page-vs-post-infographic/" target="_blank">
+					<i class="fa fa-info-circle" aria-hidden="true"></i>
+				</a>
 			</section>
 
 			<section>
-				<h2>Key Concept:<span style="color:yellow">Branches</span></h2>
+				<h3>Tour of Pages</h3>
 				<ul>
-					<li class="fragment">All commits in git live on a branch</li>
-					<li class="fragment">But there can be many many branches</li>
-					<li class="fragment">The main branch in a project is called the <span style="color:yellow">master </span> branch.</li>
+					<li><strong>Publish</strong> Change publish status and visibility settings and view revisions</li>
+					<li><strong>Page Attributes:</strong> Assign a page "parent", choose template and sort order</li>
+					<li><strong>Featured Image:</strong> Assign an image to page (requires theme support)</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Getting Started</h2>
-				<p class="fragment">You can create repositories that are version controlled on your own computer. These are called local repositories.</p>
-				<p class="fragment">The cool thing about distributed systems is that this repo acts the same way as if it were a remote repo.</p>
-			</section>
-
-			<section>
-				<h2>Creating a local repository</h2>
-				<p class="fragment">When creating a new project on your local machine using git, you will first create a new repository.</p>
-				<p class="fragment">To use git, we will use the terminal.</p>
-				<p class="fragment">To begin, open the Terminal, and move to where you want to place your project on your local machine using the 'cd' (change directory) command. </p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:~ laurahackney$ cd Documents
-Lauras-MacBook-Pro:~ laurahackney$ cd dev
-Lauras-MacBook-Pro:~ laurahackney$ mkdir newProject
-Lauras-MacBook-Pro:~ laurahackney$ cd newProject
-</code></pre>	
-			</section>
-
-			<section>
-				<h2>Creating a local repository</h2>
-				<p>To initialize a git repository in the root of the folder, run the git init command.</p>
-<pre><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git init
-
-Initialized empty Git repository in /Users/laurahackney/Documents/dev/newProject
-</code></pre>
-			</section>
-
-			<section>
-				<h2>Add a new File to the Repo</h2>
-				<p>Go ahead and add a new file to the project by running a touch command.</p>
-<pre><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ touch index.html
-Lauras-MacBook-Pro:newProject laurahackney$ ls
-</code></pre>
-				<p class="fragment">Once you have added or modified files in a folder containing a git repo, git will notice that changes have been made inside the repo. But, git won't officially keep track of the file (that is, put it in a commit), unless you tell it to.</p>
-				<p class="fragment">Visual studio code!</p>
-			</section>
-
-			<section>
-				<h2>Git status check</h2>
-				<p>After creating the new file, you can use the git status command to see which files git knows exist.</p>
-<pre><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git status
-On branch master
-Initial commit
-Untracked files: 
-</code></pre>
-			<p class="fragment">What is this is saying is, "Hey, we noticed you created a new file, but we aren't going to do anything with it until you tell us to add it."</p>
-			</section>
-
-			<section>
-				<h2>Running a commit</h2>
-				<p>To add a file to a comit, you first need to add it to the <span style="color:yellow">staging environment</span>. To go this, you can use the git add command</p>
-<pre><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git add index.html 
-</code></pre>
-				<p class="fragment">Once you've used the git add command to add all the files you want to the staging environment, you can then tell git to package them into a commit using the git commit command</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git commit -m "Initial commit!"
-</code></pre>	
-				<p class="fragment">Check your work with git log</p>
-			</section>
-
-			<section>
-				<h2>Review</h2>
+				<h2>Managing Menus</h2>
+				<h3>Appearance > Menus</h3>
+				<p>Easily create and manage navigation menus</p>
 				<ul>
-					<li>git init</li>
-					<li>git add</li>
-					<li>git status</li>
-					<li>git commit -m "text"</li>
-					<li>git log</li>
+					<li class="fragment"><strong>Create menus:</strong> Enter a menu name and click "Create Menu"</li>
+					<li class="fragment"><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Moving right along...</h2>
+				<img src="images/giphy11.webp" alt="Hair Flip">
+			</section>
+
+			<section>
+				<h2>What are Plugins?</h2>
+				<h3>Official description from WordPress.org</h3>
+				<blockquote>
+					Plugins can extend WordPress to do almost anything you can imagine.
+				</blockquote>
+				<img src="images/giphy12.gif" alt="Multitasking">
+			</section>
+			
+			<section>
+				<h2>Plugins are Powerful</h3>
+				<p>Plugins are used to add functionality to WordPress. Examples include ecommerce, SEO, forms, photo galleries, social media sharing, forums and much more!
+				</p>
+			</section>
+			
+			<section>
+				<h2>Plugins are often free</h3>
+				<p>Right now there are 52,108 free plugins in the official <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a>.
+				</p>
+			</section>
+			
+			<section>
+				<h2>Plugins</h2>
+				<h3>Plugins menu</h3>
+				<p>
+					WordPress comes with 2 plugins:
+					<ul>
+						<li><strong>Akismet:</strong> Protects your blog from comment and trackback spam. This plugin requires an <a href="http://akismet.com/wordpress" target="_blank">Akismet key</a></li>
+						<li><strong>Hello Dolly:</strong> Adds a random lyric from "Hello Dolly" to the upper right-hand corner of admin screen.</li>
+					</ul>
+				</p>
+			</section>
+			
+			<section>
+				<h2>Plugins</h2>
+				<h3>Managing Plugins</h3>
+				<p>
+					<ul>
+						<li class="fragment"><strong>Activate/Deactivate:</strong> Turns plugins "on" and "off"</li>
+						<li class="fragment"><strong>Edit:</strong> Ability to edit plugin files NOT RECOMMENDED</li>
+						<li class="fragment"><strong>Delete:</strong> Delete deactivated plugins</li>
+					</ul>
+				</p>
+			</section>
+			
+			<section>
+				<h2>Plugins</h2>
+				<h3>Finding plugins</h3>
+				<ul>
+					<li>Searching under Plugins > Add New</li>
+					<li>Browsing the <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a></li>
+				</ul>
+			</section>
+
+			
+			<section>
+				<h2>Plugins</h2>
+				<h3>Usage tip</h3>
+				<p>Plugins often use <a href="http://codex.wordpress.org/Shortcode" target="_blank">shortcodes</a> to add content to a page or post.
+				</p>
+				<p>For example, the plugin <a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> uses the shortcode <code>[contact-form-7 id="105"]</code> (the ID is the ID of the form) to allow you a form to a page or post. 
+				</p>
+			</section>
+			
+			<section>
+				<h2>Plugins</h2>
+				<h3>Security tip - Vet plugins first</h3>
+				<ul>
+					<li><strong>Ratings</strong> Read the plugin reviews</li>
+					<li><strong>Maintenance</strong> Check to see it the plugin has regular updates</li>
+					<li><strong>Support</strong> See if the plugin developers regularly answer support questions</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Top Free Plugins</h2>
+				<h3>Favorite Free plugins</h3>
+				<ul>
+					<li><strong><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast:</a></strong> SEO plugin for WordPress </li>
+					<li><strong><a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7:</a></strong> Used to make simple contact forms </li>
+					<li><strong><a href="https://wordpress.org/plugins/seamless-donations/" target="_blank">Seamless Donation:</a></strong> PayPal plugin</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Top Premium Plugins</h2>
+				<h3>Favorite For-pay plugins</h3>
+				<ul>
+					<li><strong><a href="http://www.gravityforms.com/" target="_blank">Gravity Forms:</a></strong> A very powerful and feature-rich forms builder</li>
+					<li><strong><a href="http://ithemes.com/purchase/backupbuddy/" target="_blank">Backup Buddy:</a></strong> Easily backup, restore and migrate a WordPress site</li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Exercises</h2>
-				<p>Look over this one: <a href="https://www.atlassian.com/git/tutorials/setting-up-a-repository">Setting up a Repo</a></p>
-				<p>We will do this one together. Do the first nine exercises. <a href="https://try.github.io/levels/1/challenges/1">Exercises</a></p>
-				<p>For you to look at later <a href="http://women2.com/2016/02/09/git-101-for-beginners/?hvid=3PXmn9&utm_source=Women+2.0+Mailing+List&utm_campaign=b06f62550e-08-24-15_Weekly_Newsletter&utm_medium=email&utm_term=0_8e8e6a075d-b06f62550e-310404969">Git 101</a></p>
+				<h2>What are Themes?</h2>
+				<h3>Official description from WordPress.org</h3>
+				<blockquote>
+					Fundamentally, the WordPress Theme system is a way to manage the look of your website. WordPress Themes can provide much more control over the look and <em>presentation</em> of the material on your website.
+				</blockquote>
 			</section>
-
+			
 			<section>
-				<h2>Let's make this easier</h2>
-				<img src="images/easy.jpeg" alt="">
+				<h2>Themes are Powerful</h2>
+				<p>A theme not only determines how a site looks, it can also add functionality. There are themes that can turn a WordPress site into an online store, an art portfolio and more.
+				</p>
+				<img src="images/giphy7.webp" alt="Powerful gif" width="700px">
 			</section>
-
+			
 			<section>
-				<h2>Sourcetree</h2>
-				<p>Go to sourcetreeapp.com</p>
-				<p>Visual tour and logging in with a Github account</p>
+				<h2>Themes are often free</h2>
+				<p>Right now there are over 2,643 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
+				</p>
 			</section>
-
+			
 			<section>
-				<h2>Github!</h2>
-				<img src="images/codercat.jpg" width= "500px" alt="">
+				<h2>Managing Themes</h2>
+				<h3>Appearance > Themes</h3>
+				<p>WordPress currently comes with 2 themes:  Twenty Seventeen and Twenty Sixteen.
+				</p>
+				<p>Under <strong>Appearance > Themes</strong> is a list of all installed themes. The theme in use is labeled "Active."
+				</p>
 			</section>
-
+			
 			<section>
-				<h2>What is Github?</h2>
-				<p>www.github.com</p>
+				<h2>Themes</h2>
+				<h3>Finding new themes</h3>
 				<ul>
-					<li class="fragment">It is the largest web-based git repository hosting service</li>
-					<li class="fragment">Allows for code collaboration with anyone online</li>
-					<li class="fragment">Adds a bunch of features like bug tracking!</li>
-					<li class="fragment">Check out our AnnieCannons github Repo</li>
+					<li>Searching under the "Add Themes" tab</li>
+					<li>Browsing the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
 				</ul>
 			</section>
 
 			<section>
-				<h2>Using Remote Repos</h2>
-				<p class="fragment">To synchronize with a remote repository, first tell Git about it</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git remote add origin git://github.com/username/repo
-</code></pre>
-				<p class="fragment">To push changes, use git push</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git push origin master
-</code></pre>
-				<p class="fragment">To pull changes, use git pull</p>
-<pre class="fragment"><code class="js" data-trim contenteditable>
-Lauras-MacBook-Pro:newProject laurahackney$ git pull origin master
-</code></pre>
-				<p class="fragment">OR! Use sourcetree!!</p>
+				<h2>Our Theme</h2>
+				<a href="https://theme.co/x/">X Theme</a>
+				<p>A look at the:</p>
+				<ul>
+					<li>Stacks</li>
+					<li>Extensions (like Custom Plugins)</li>
+					<li>Cornerstone</li>
+					<li>Demos</li>
+				</ul>
 			</section>
 
 			<section>
-				<h2>Fork a Repo!</h2>
+				<h2>Adding X</h2>
+				<a href="https://docs.google.com/document/d/1MiHbsGanpizq52Gq-SLDeBHqt7BRgPsSoZ02fYqqC5A/edit?usp=sharing">Google Doc Here</a>
+			</section>
+			
+			<section>
+				<h2>Changing Site Appearance</h2>
+				<h3>The Customizer</h3>
+				<p>Make customizations to your site's appearance and preview them in real time before making them live.</p>
+			</section>
+				
+			<section>
+				<h2>Cornerstone!</h2>
+				<p>Where you will spend more of your time</p>
 			</section>
 
 			<section>
-				<h2>AC Algorithms</h2>
-				<p>Your first pull!</p>
+				<h2>Let's make a website.</h2>
+			</section>
+
+			<section>
+				<h2>Where to go from here?</h2>	
+				<h3>Front-End Developers</h3>
+				<p>Folks with a HTML/CSS skill set can customize or build their own WordPress themes.
+				</p>
+				<ul>
+					<li><strong><a href="https://carriedils.com/category/wordpress/" target="_blank">WordPress Courses</a></strong> - Carrie Dils</li>
+					<li><strong><a href="https://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/491704-2.html" target="_blank">Building Themes from Scratch Using Underscores</a></strong> Morten Rand-Hendriksen</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Where to go from here?</h2>	
+				<h3>Web programmers</h3>
+				<p>Folks with PHP/MySQL/JavaScript skill set can build WordPress plugins.
+				</p>
+				<ul>
+					<li><strong><a href="https://javascriptforwp.com/" target="_blank">JavaScript for WordPress Master Course</a></strong> Zac Gordon</li>
+					<li><strong><a href="https://pippinsplugins.com/learn/" target="_blank">Learn Plugin Development</a></strong> - Pippin Williamson</li>
+				</ul>
 			</section>
 
 		<!-- Last Slide -->
