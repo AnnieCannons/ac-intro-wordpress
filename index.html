@@ -9,6 +9,7 @@
 	<meta name="description" content="AnnieCannons class slides">
 	<meta name="author" content="AnnieCannons">
 
+	<link rel="icon" type="image/png" href="images/AC_Asterisk.png">
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/league.css">
 
@@ -29,7 +30,7 @@
 		<div class="slides">
 
 			<section>
-				<h1>Wordpress</h1>
+				<h1>WordPress</h1>
 				<img src="images/giphy8.gif" alt="Wordpress Logo" />
 			</section>
 
@@ -44,8 +45,8 @@
 			<section>
 				<h2>Why are we learning it?</h2>
 				<ul>
-					<li>WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world (59.5% marketshare)</a>. </li>
-					<li>WordPress is used by 28.6% of the sites on the web.</li>
+					<li>WordPress is the <a href="http://w3techs.com/technologies/overview/content_management/all" target="_blank">#1 content management system in the world (63.2% marketshare)</a>. </li>
+					<li>WordPress is used by 35.9% of the sites on the web.</li>
 					<li>WordPress 4.8 has been downloaded over 30,332,145 times</li>
 				</ul>
 				<img src="images/giphy9.gif" alt="Popular gif">
@@ -59,7 +60,7 @@
 			</section>
 			
 			<section>
-				<h2>WordPress is website building framework</h2>
+				<h2>WordPress is a website building framework</h2>
 				<p>
 					WordPress is a platform for building and designing a website.
 				</p>
@@ -83,25 +84,25 @@
 				<h2>What is a content management system?</h3>
 				<p>A program that allows site owners to manage their site content via an easy-to-use admin or dashboard.
 				</p>
-				<img src="images/dashboard.png" alt="Wordpress Dashboard">
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/dashboard.jpg" alt="Wordpress Dashboard">
 			</section>
 
 			<section>
 				<h2>CMS</h2>
-				<img src="images/cms1.png" alt="CMS outline" width="500px">
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/cms1.png" alt="CMS outline" width="500px">
 			</section>
 
 			<section>
 				<h2>CMS</h2>
-				<img src="images/cms2.png" alt="CMS Breakdown" width="500px">
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/cms2.png" alt="CMS Breakdown" width="500px">
 			</section>
 			
 			<section>
 				<h2>WordPress.org vs. WordPress.com</h2>
 				<ul>
-					<li><strong style="color: yellow;">WordPress.org</strong> - Web software used to build a website on a hosting account with a domain name. Sites can be built and modified using themes, plugins or custom code</li> <br />
+					<li><strong style="color: yellow;">WordPress.org</strong> - Web software used to build a website on a hosting account with a domain name. Sites can be built and modified using themes, plugins or custom code.</li> <br />
 
-					<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons), theme choices are limited, plugins can not be installed and code can not be modified</li>
+					<li><strong>WordPress.com</strong> - A free blogging service that allows people to create a blog hosted on WordPress.com's servers. Hosting is free (although there are some for-pay add-ons), theme choices are limited, plugins can not be installed and code can not be modified.</li>
 				</ul>
 				<a href="http://www.wpbeginner.com/beginners-guide/self-hosted-wordpress-org-vs-free-wordpress-com-infograph/?display=wide" target="_blank">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
@@ -112,9 +113,9 @@
 				<h2>Local Install</h2>
 				<h3>What Is Needed For Setting Up Your Local Environment</h3>
 				<ol>
-					<li class="fragment">A Web browser. Installation is performed step-by-step on a web browser</li>
-					<li class="fragment">MAMP (an application you download) to run the server on your local computer</li>
-					<li class="fragment">The Wordpress code starter files</li>
+					<li class="fragment">A Web browser. Installation is performed step-by-step on a web browser.</li>
+					<li class="fragment">MAMP (an application you download) to run the server on your local computer.</li>
+					<li class="fragment"> WordPress code starter files (downloaded from the web).</li>
 				</ol>
 			</section>
 
@@ -129,19 +130,17 @@
 						<li>PHPMyAdmin (Server Code)</li>
 					</ul>
 				</p>
+				<p class="fragment">Watch <a href="https://www.youtube.com/watch?v=fd7y2BsYpVU" target="_blank">here!</a></p>
 			</section>
 
 			<section>
 				<h2>MAMP</h2>
-				<p class="fragment">Developing a Wordpress site locally with MAMP is much faster because you don't have to go over the network to make your changes.</p>
+				<p class="fragment">Developing a WordPress site locally with MAMP is much faster because you don't have to go over the network to make your changes.</p>
 				<p class="fragment">Always remember to turn off your server!</p>
-				<p class="fragment">When you are done building your site, you will send the code files and your database to your PM. Then, your site files will be transformed to a web server and deployed for the world to see!</p>
+				<p class="fragment">When done building the site, send the code files and its database to your PM. Then, your site files will be transformed to a web server and deployed for the world to see!</p>
 			</section>
 
-			<section>
-				<h2>Directions!</h2>
-				<a href="https://docs.google.com/document/d/1r3jIlwQNADbWmpQvhvmWBViPfIGpmS9peLCyXcV4zkE/edit?usp=sharing">Google Doc Here</a>
-			</section>
+			
 
 			<section>
 				<h2>Security</h2>
@@ -154,14 +153,22 @@
 			
 			<section>
 				<h2>Security</h2>
-				<h3>During install</h3>
+				<h3>During install - See 'Getting Started Guide'</h3>
 				<ul>
 					<li>Make your database table prefix unique. Don't use "wp_" or "wordpress_"</li>
-					<li>Create a new database user, don't use the default</li>
+					<li>Create a new database user, do NOT use the default.</li>
 					<li>Make your database user password strong.</li>
-					<li><strong>Do not use "admin" as a username.</strong> "admin" used to be the default WordPress username. Use a unique username and a very strong Password</li>
+					<li><strong>Do not use "admin" as a username.</strong> "admin" used to be the default WordPress username. Use a unique username and a very strong Password.</li>
 					<li><strong>Save your username and password in a safe place!</strong></li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Exercise!</h2>
+				<h3>Start Your First WordPress Site</h3>
+				<a href="https://docs.google.com/document/d/1r3jIlwQNADbWmpQvhvmWBViPfIGpmS9peLCyXcV4zkE/edit?usp=sharing" target="_blank">Google Doc Here</a> <br>
+				<img src="images/exercise.gif" alt="Exercise Gif"> <br> <a href="https://trello.com/b/qVpE3Pqt/template-student-journey-phase-23-wordpress" target="_blank">
+				<img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px"></a> 
 			</section>
 
 			<section>
@@ -192,12 +199,23 @@
 					</ol>
 				</p>	
 			</section>
+
+			<section>
+				<h2>A Tour of the Backend Admin</h2>
+				
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wordpress-admin-dashboard.png" alt="Wordpress Admin Dashboard">
+			</section>
 			
 			<section>
 				<h2>A Tour of the Backend Admin</h2>
-				<p><strong> Tip:</strong> Open the front end of your site in one browser tab or window, and the backend in another so you can easily switch between the 2 as you make changes to your site. 
-				</p>
-				<img src="images/giphy10.gif" alt="Coding Like A Boss">
+				<p><strong> Tip:</strong> Use separate windows for the following:</p>
+				<ul>
+					<li class="fragment">The front end of your site</li>
+					<li class="fragment">The back end of your site</li>
+				</ul>
+				<p class="fragment">This allows you to easily switch between the 2 as you make changes and preview your site.</p>
+				<p class="fragment">Take a moment and try it now!</p>
+				<!-- <img src="images/giphy10.gif" alt="Coding Like A Boss"> -->
 			</section>
 			
 			<section>
@@ -212,16 +230,49 @@
 					<li class="fragment"><strong>Permalinks:</strong> Define the structure of site URLs</li>
 				</ul>
 			</section>
+
+			<section>
+				<h3>The Settings Menu</h3>
+				<h2>General</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-general-settings.png" alt="Wordpress Dashboard general settings page" >
+			</section>
+
+			<section>
+				<h3>The Settings Menu</h3>
+				<h2>Writing</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-writing-settings.png" alt="Wordpress Dashboard Writing settings page" >
+			</section>
+
+			<section>
+				<h3>The Settings Menu</h3>
+				<h2>Reading</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-reading-settings.png" alt="Wordpress Dashboard Reading settings page" >
+			</section>
+
+			<section>
+				<h3>The Settings Menu</h3>
+				<h2>Media</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-media-settings.png" alt="Wordpress Dashboard Media settings page" >
+			</section>
+
+			<section>
+				<h3>The Settings Menu</h3>
+				<h2>Permalinks</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-permalink-settings.png" alt="Wordpress Dashboard Permalinks settings page" >
+			</section>
 			
 			<section>
 				<h2>Exercise time!</h2>
-				<p>Some tasks to get you familiar with the Settings menu and dashboard</p>
+				<p>Some tasks to explore in the Settings menu and dashboard:</p>
 				<ul>
-					<li>Change the name of your site</li>
-					<li>Change the "Front page" of your site to the sample page </li>
-					<li>Change the Permalinks of yout page to be set by the Posts</li>
+					<li>Change the name of your site.</li>
+					<li>Change the "Front page" of your site to the sample page.</li>
+					<li>Change the Permalinks of your page to be set by the Posts.</li>
 				</ul>
-				<img src="images/giphy5.gif" alt="Its about to go down">
+				<img src="images/exercise.gif" alt="Exercise Gif" width="200px" height="200px"> <br>
+				<a href="https://trello.com/b/qVpE3Pqt/template-student-journey-phase-23-wordpress" target="_blank">
+				<img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px">
+			</a>
 			</section>
 			
 			<section>
@@ -233,8 +284,32 @@
 					<li class="fragment"><strong>Menus:</strong>  Manage navigation menus</li>
 					<li class="fragment" ><strong>Header:</strong> Manage header text and image</li>
 					<li class="fragment"><strong>Background:</strong> Manage background color and image</li>
-					<li class="fragment"><strong>Editor:</strong> Dangerous way to edit theme and plugin flies. This is disabled if you "harden" WordPress</li>
+					<li class="fragment"><strong>Editor:</strong> Dangerous way to edit theme and plugin files. This is disabled if you "harden" WordPress.</li>
 				</ul>
+			</section>
+
+			<section>
+				<h3>The Appearance Menu</h3>
+				<h2>Themes</h2>
+				<ul>
+					<li class="fragment">Themes provide templates and layout to build pages for our site.</li>
+					<li class="fragment">Several starter themes are in our WordPress dashboard.</li>
+					<li>We can add our own themes to our WordPress source code files.</li>
+					<li class="fragment">When using themes to build a website, always use the <span style="color: yellow;">child</span> theme.</li>
+					<li>Learn how to add a theme on the next slide!</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Adding X</h2>
+				<a href="https://docs.google.com/document/d/1MiHbsGanpizq52Gq-SLDeBHqt7BRgPsSoZ02fYqqC5A/edit?usp=sharing" target="_blank">Google Doc Here</a>
+				<p><a href="https://drive.google.com/open?id=1WktmEPajkWenCMjb8jtbxexiNC76KimX" target="_blank">Then Watch Here!</a></p>
+			</section>
+
+			<section>
+				<h3>The Appearance Menu</h3>
+				<h2>Widgets</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-widgets-page.png" alt="Widgets Dashboard general settings page" >
 			</section>
 
 			<section>
@@ -242,14 +317,21 @@
 				<h3>Pages and Posts</h3>
 				<ul>
 					<li><strong>Pages:</strong> Regular static website pages with content</li>
-					<li><strong>Posts:</strong> Entries (like blog posts) that have a date, categories and tags assigned to them. They can be listed in a particular order (chronologically, alphabetically, etc.) and fed to other sites or blog readers via an RSS feed</li>
-				</ul>		
+					<li><strong>Posts:</strong></li>
+					<ul>
+						<li>Entries (like blog posts) that have a date, categories and tags assigned to them.</li>
+						<li>Posts can be listed in a particular order (chronologically, alphabetically, etc.)</li>
+						<li>Posts can be fed to other sites or blog readers via an RSS feed.</li>
+					</ul>
+				</ul>	
+				
 				<a href="http://www.chaostoclarity.com/how-wordpress-works-page-vs-post-infographic/" target="_blank">
 					<i class="fa fa-info-circle" aria-hidden="true"></i>
 				</a>
 			</section>
 
 			<section>
+				<h2>Adding Content</h2>
 				<h3>Tour of Pages</h3>
 				<ul>
 					<li><strong>Publish:</strong> Change publish status and visibility settings and view revisions</li>
@@ -259,13 +341,50 @@
 			</section>
 
 			<section>
+				<h2>Adding Content</h2>
+				<h3>Add New Pages</h3>
+				<ul>
+					<li>In left sidebar menu, click on <b>Pages</b>.</li>
+					<li>Then click on <b>Add New</b>.</li>
+					<li>Add a <b>Title</b> (e.g., "Home", "About") to your page.</li>
+					<li>In right sidebar menu, click <b>Page Attributes</b>.</li>
+					<li>Change Template from Default to <b>Blank - No Container | Header, Footer</b>.</li>
+					<li>In upper right corner of screen, click <b>Publish</b>.</li>
+					<li>A published page can now be added to a <b>Menu</b> (e.g., Header, Footer).</li>
+					<li>Continue to add more pages as needed for your project.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Adding Content</h2>
+				<h3>Adjust Homepage Settings</h3>
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in; float: left;" src="images/homepage-settings.jpg" alt="Homepage Settings in X Theme">
+				<ul style="float: right; width: 70%;">
+					<li>After creating the "Home" Page, on left sidebar menu click on <b>Settings</b>.</li>
+					<li>Then click on <b>Reading</b>.</li>
+					<li>In "Your Homepage Displays" section, select "<b>A static page</b>."</li>
+					<li>Under static page in the "Homepage" dropdown menu, select <b>Home</b>.</li>
+					<li>Scroll down to click on <b>Save Changes</b>.</li>
+					<li>Now your site will display your "Home" page as the homepage.</li>
+				</ul>
+			</section>
+
+			<section>
+				<h3>The Appearance Menu</h3>
+				<h2>Menus</h2>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in" src="images/wp-menus-settings.png" alt="Menus settings page" >
+				<p>(There is a video on the next slide.)</p>
+			</section>
+
+			<section>
 				<h2>Managing Menus</h2>
 				<h3>Appearance > Menus</h3>
 				<p>Easily create and manage navigation menus</p>
 				<ul>
-					<li class="fragment"><strong>Create menus:</strong> Enter a menu name and click "Create Menu"</li>
-					<li class="fragment"><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages</li>
+					<li class="fragment"><strong>Create menus:</strong> Enter a menu name and click "Create Menu."</li>
+					<li class="fragment"><strong>Order Pages:</strong> Drag and drop your pages menu items in the desired order. Indent pages to make them children of other pages.</li>
 				</ul>
+				<a href="https://drive.google.com/open?id=12pFzrMyuX-lqvCguNAGffv6F0UpIQJKp" target="_blank" class="fragment">Watch here!</a>
 			</section>
 			
 			<section>
@@ -284,13 +403,22 @@
 			
 			<section>
 				<h2>Plugins are Powerful</h3>
-				<p>Plugins are used to add functionality to WordPress. Examples include ecommerce, SEO, forms, photo galleries, social media sharing, forums and much more!
-				</p>
+				<p>Plugins add functionality to WordPress. Examples include:</p>
+					<ul>
+						<li>ecommerce</li>
+						<li>SEO</li>
+						<li>forms</li>
+						<li>photo galleries</li>
+						<li>social media sharing</li>
+						<li>forums</li>
+						<li>and much more!</li>
+					</ul>
+				
 			</section>
 			
 			<section>
 				<h2>Plugins are often free</h3>
-				<p>Right now there are 52,108 free plugins in the official <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a>.
+				<p>Right now there are 56,553 free plugins in the official <a href="http://wordpress.org/plugins/" target="_blank">WordPress Plugin Directory</a>.
 				</p>
 			</section>
 			
@@ -330,31 +458,41 @@
 			
 			<section>
 				<h2>Plugins</h2>
-				<h3>Usage tip</h3>
+				<h3>shortcodes</h3>
 				<p>Plugins often use <a href="http://codex.wordpress.org/Shortcode" target="_blank">shortcodes</a> to add content to a page or post.
 				</p>
-				<p>For example, the plugin <a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7</a> uses the shortcode <code>[contact-form-7 id="105"]</code> (the ID is the ID of the form) to allow you a form to a page or post. 
-				</p>
+				<a href="https://drive.google.com/open?id=1Yvt1HB7Y2m4u9sKMhfvPSDCMJTsU35WG" target="_blank">Watch here!</a>
 			</section>
 			
 			<section>
 				<h2>Plugins</h2>
 				<h3>Security tip - Vet plugins first</h3>
 				<ul>
-					<li><strong>Ratings</strong> Read the plugin reviews</li>
-					<li><strong>Maintenance</strong> Check to see it the plugin has regular updates</li>
-					<li><strong>Support</strong> See if the plugin developers regularly answer support questions</li>
+					<li><strong>Ratings</strong>: Read the plugin reviews</li>
+					<li><strong>Maintenance</strong>: Check to see it the plugin has regular updates</li>
+					<li><strong>Support</strong>: See if the plugin developers regularly answer support questions</li>
 				</ul>
 			</section>
 			
 			<section>
-				<h2>Top Free Plugins</h2>
-				<h3>Favorite Free plugins</h3>
+				<h2>AnnieCannons Plugins List</h2>
+				<p>This list is always changing - Feel free to let staff know if you find another great one!</p>
+				<a href="https://docs.google.com/document/d/13exVb5tiLoXmAxi3If7L0HpvpIPHOFXBQhrE9s63mbM/edit" target="_blank">Google Doc Here</a>
+			</section>
+
+			<section>
+				<h2>Exercise Time!</h2>
 				<ul>
-					<li><strong><a href="http://wordpress.org/plugins/wordpress-seo/" target="_blank">WordPress SEO by Yoast:</a></strong> SEO plugin for WordPress </li>
-					<li><strong><a href="http://wordpress.org/plugins/contact-form-7/" target="_blank">Contact Form 7:</a></strong> Used to make simple contact forms </li>
-					<li><strong><a href="https://wordpress.org/plugins/seamless-donations/" target="_blank">Seamless Donation:</a></strong> PayPal plugin</li>
+					<li>Choose a plugin from the list on the Google Doc</li>
+					<li>Install & activate</li>
+					<li>Create a new element, depending on which plugin you choose</li>
+					<li>Spend no more than 10 minutes playing with your creation</li>
+					<li>Add it to your project using a shortcode</li>
 				</ul>
+				<img src="images/exercise.gif" alt="Exercise Gif" width="200px" height="200px"> <br>
+				<a href="https://trello.com/b/qVpE3Pqt/template-student-journey-phase-23-wordpress" target="_blank">
+				<img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px">
+			</a>
 			</section>
 			
 			<section>
@@ -383,15 +521,19 @@
 			
 			<section>
 				<h2>Themes are often free</h2>
-				<p>Right now there are over 2,643 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
+				<p>Right now there are over 7,503 free themes in the official <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a>.
 				</p>
 			</section>
 			
 			<section>
 				<h2>Managing Themes</h2>
 				<h3>Appearance > Themes</h3>
-				<p>WordPress currently comes with 2 themes:  Twenty Seventeen and Twenty Sixteen.
-				</p>
+				<p>WordPress currently comes with 3 themes:</p>
+				<ul>
+					<li>Twenty Twenty</li>
+					<li>Twenty Nineteen</li>
+					<li>Twenty Seventeen</li>
+				</ul>
 				<p>Under <strong>Appearance > Themes</strong> is a list of all installed themes. The theme in use is labeled "Active."
 				</p>
 			</section>
@@ -400,14 +542,14 @@
 				<h2>Themes</h2>
 				<h3>Finding new themes</h3>
 				<ul>
-					<li>Searching under the "Add Themes" tab</li>
-					<li>Browsing the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
+					<li>Search under the "Add Themes" tab</li>
+					<li>Browse the <a href="http://wordpress.org/themes/" target="_blank">WordPress Themes Directory</a></li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Our Theme</h2>
-				<a href="https://theme.co/x/">X Theme</a>
+				<a href="https://theme.co/x/" target="_blank">X Theme</a>
 				<p>A look at the:</p>
 				<ul>
 					<li>Stacks</li>
@@ -416,21 +558,25 @@
 					<li>Demos</li>
 				</ul>
 			</section>
-
-			<section>
-				<h2>Adding X</h2>
-				<a href="https://docs.google.com/document/d/1MiHbsGanpizq52Gq-SLDeBHqt7BRgPsSoZ02fYqqC5A/edit?usp=sharing">Google Doc Here</a>
-			</section>
 			
+			<section>
+				<h2>X Theme Launcher</h2>
+				<p>The X theme launcher allows you to create and edit content, templates, global styles and scripts, and customize options.</p>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in; width: 500px;" src="images/x-theme-launcher.jpg" alt="X Theme Launcher">
+			</section>
+
 			<section>
 				<h2>Changing Site Appearance</h2>
 				<h3>The Customizer</h3>
 				<p>Make customizations to your site's appearance and preview them in real time before making them live.</p>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in; width: 500px;" src="images/customizer.jpg" alt="Customizer in X Theme">
 			</section>
 				
 			<section>
 				<h2>Cornerstone!</h2>
-				<p>Where you will spend more of your time</p>
+				<p>Where you will spend most of your time</p>
+				<img data-enlargable width="500" style="border: 5px solid blue; cursor: zoom-in; width: 500px;" src="images/cornerstone.jpg" alt="Cornerstone Startup Menu for Content Creation and Editing in X Theme">
+				<p>See the Cornerstone Startup Menu above</p>
 			</section>
 
 			<section>
@@ -438,6 +584,115 @@
 			</section>
 
 			<section>
+				<h2>Customizer</h2>
+				<p>The Customizer has options to apply global styles:</p>
+				<ul>
+					<li><b>Stack:</b> Integrity, Renew, Icon, Ethos</li>
+					<li><b>Stack Options:</b> Dark/Light, Blog Header, Portfolio Index</li>
+					<li><b>Layout & Design:</b> Background</li>
+					<li><b>Typography:</b> Root, Google, Body/Content, Headings, Links</li>
+					<li><b>Buttons:</b> Style, Color, Hover</li>
+					<li><b>Header:</b> Navbar, Logo, Navigation, Image, Links, Search, etc</li>
+					<li><b>Footer:</b> Menu, Social, Content</li>
+					<li><b>Blog:</b> Style, Archive, Content</li>
+					<li><b>Portfolio:</b> Content, Label, Sharing</li>
+					<li><b>Social:</b> Links, Open Graph, Fallback Image</li>
+					<li><b>Miscellaneous:</b> Scroll Top Anchor</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Global CSS in Customizer</h2>
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/global-css-js-sidebar.png" alt="Global CSS and JS Buttons in Left Sidebar of Customizer">
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/global-css-panel.png" alt="Global CSS Sidebar in Customizer">
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/global-css-expanded.png" alt="Global CSS Expanded Sidebar in Customizer">
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/global-css-example.png" alt="Global CSS Expanded Sidebar in Customizer">
+				<ul>
+					<li class="fragment">Sets styling for entire site</li>
+					<li class="fragment">Can be ridden over by content CSS</li>
+					<li class="fragment">Only place to use pure element selectors</li>
+					<li class="fragment">Great for setting typography and colors for the entire site</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Content CSS in Cornerstone</h2>
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/content-css-js-sidebar.png" alt="Content CSS and JS Buttons in Left Sidebar of Cornerstone">
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/content-css-panel.png" alt="Content CSS and JS Buttons in Left Sidebar of Cornerstone">
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/content-css-expanded.png" alt="Content CSS and JS Buttons in Left Sidebar of Cornerstone">
+				<ul>
+					<li class="fragment">Sets the styling for a specific element or part of a page</li>
+					<li class="fragment">Be sure to add classes to sections & elements</li>
+					<li class="fragment">Thus, use custom CSS classes as your selectors</li>
+					<li class="fragment">Style rules will only apply to selected content, not to the entire site</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Naming Conventions</h2>
+				<ul>
+					<li class="fragment">Always give sections a class, and use the name of the page + the section, e.g. class="about-hero-section"</li>
+					<li class="fragment">Choose a name that lets developers know what the content is, not the styling.</li>
+					<li class="fragment">Use classes, not ID's</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Elements</h2>
+				<ul>
+					<li class="fragment">Super easy way to add sliders, images, text, accordions, and so much more!</li>
+					<li class="fragment">Simply drag and drop the element you would like to use to the section on your page</li>
+					<li class="fragment">You can always add classes and styling with CSS</li>
+					<li class="fragment">Rule of thumb: try to find an element that will work for your project, before you resort to building a content area</li>
+				</ul>
+
+				<a class="fragment" href="https://drive.google.com/open?id=1VkjkGEK2KJr7f4hq0mK5BpaSiBrVjaJH" target="_blank">Watch here!</a>
+			</section>
+
+			<section>
+				<h2>Content Areas</h2>
+				<ul>
+					<li class="fragment">Need to add some custom HTML to your page?</li>
+					<li class="fragment">Content areas to the rescue!</li>
+					<li class="fragment">Content ares are also what you will use to add shortcodes to your page</li>
+					<li class="fragment">Use content areas when there is not an element that will work</li>
+					<li class="fragment">Great for lists & tables</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Responsive Design</h2>
+				<ul>
+					<li class="fragment">Figuring out the size of the design is important!</li>
+					<li class="fragment">Build scaffolding first</li>
+					<li class="fragment">How many columns will each device use?</li>
+				</ul>
+				<p><a class="fragment" href="https://drive.google.com/open?id=17dmGtW6TZPuhxqbsKd7lH_nclcxiB0EF" target="_blank">Watch here!</a></p>
+				
+			</section>
+
+			<section>
+				<h2>Cloning Pages</h2>
+				<ul>
+					<li class="fragment"></li>
+					<li class="fragment"></li>
+					<li class="fragment"></li>
+					<li class="fragment"></li>
+					<li class="fragment"></li>
+				</ul>
+				<p><a class="fragment" href="#" target="_blank">Watch here!</a></p>
+			</section>
+
+			<section>
+				<h2>Figuring Out the Size of the Design</h2>
+				<ul>
+					<li class="fragment">Always check to see what size your designs are! </li>
+					<li class="fragment">From there, you can use proportions to figure out what size everything should be.</li>
+				</ul>
+				<p class="fragment">Click <a href="https://xd.adobe.com/spec/bc9b3a69-f07c-44cc-7124-b191b5239f0a-caaa/" target="_blank" >here</a> to see a sample design</p>
+			</section>
+
+			<!-- <section>
 				<h2>Where to go from here?</h2>	
 				<h3>Front-End Developers</h3>
 				<p>Folks with a HTML/CSS skill set can customize or build their own WordPress themes.
@@ -446,6 +701,16 @@
 					<li><strong><a href="https://carriedils.com/category/wordpress/" target="_blank">WordPress Courses</a></strong> - Carrie Dils</li>
 					<li><strong><a href="https://www.lynda.com/WordPress-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/491704-2.html" target="_blank">Building Themes from Scratch Using Underscores</a></strong> Morten Rand-Hendriksen</li>
 				</ul>
+			</section> -->
+
+			<section>
+				<h2>Using your dev tools to find selectors</h2>
+				<ul>
+					<li class="fragment">Adding your own class names to Cornerstone won't always allow you to select the elements you need to style</li>
+					<li class="fragment">WordPress adds classes to divs and other elements automatically</li>
+					<li class="fragment">Luckily, you can use your dev tools to figure out the class names that are added by Cornerstone!</li> 
+				</ul>
+				<p><a href="https://drive.google.com/open?id=1gHiuifcxsil1TdQMlAFHyDnFM1FjL8Uv" target="_blank" class="fragment">Watch here!</a></p> 
 			</section>
 			
 			<section>
@@ -466,7 +731,8 @@
 		</section>
 	</div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/zoomin.js"></script>
 <script src="lib/js/head.min.js"></script>
 <script src="js/reveal.js"></script>
 
