@@ -747,7 +747,7 @@
 					<li class="fragment">Can be ridden over by content CSS</li>
 					<li class="fragment">Only place to use pure element selectors</li>
 					<li class="fragment">Great for setting typography and colors for the entire site</li>
-					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone.</li>
+					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone. More on this later.</li>
 				</ul>
 			</section>
 
@@ -816,7 +816,7 @@
 					<li class="fragment">Be sure to add classes to sections & elements.</li>
 					<li class="fragment">Thus, use custom CSS classes as your selectors.</li>
 					<li class="fragment">Style rules will only apply to selected content, not to the entire site.</li>
-					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone.</li>
+					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone. More on this later.</li>
 				</ul>
 			</section>
 
@@ -1025,9 +1025,41 @@
 					<li>Build one section at a time.</li>
 					<li>See how the section changes across screen sizes.</li>
 					<li>Use the Layout tab to designate breakpoints for the row.</li>
-					<li>Only when the row's built-in breakpoints fail should you add Media Queries to your Content CSS (more on this later).</li>
+					<li>Only when the row's built-in breakpoints fail should you add Media Queries to your Content CSS (next slide).</li>
 				</ol>
 			</section>
+
+			<!-- <section>
+				<h2>Media Queries in Content CSS</h2>
+				<p>To only alter the breakpoints for a page, you will want to open the Content CSS and insert media queries:</p>
+<pre class="fragment"><code class="css" data-trim contenteditable>
+/* Tablet */
+@media screen and (min-width: 768px) {
+  selector {
+    property: value;
+  }
+}
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  selector {
+    property: value;
+  }
+}
+/* Small desktops */
+@media screen and (min-width: 1200px) {
+  selector {
+    property: value;
+  }
+}
+
+/* Large desktops */
+@media screen and (min-width: 1440px) {
+  selector {
+    property: value;
+  }
+}
+</code></pre>
+			</section> -->
 
 			<!-- <section>
 				<h2>Where to go from here?</h2>	
@@ -1070,6 +1102,15 @@ selector {
 					<li><strong><a href="https://javascriptforwp.com/" target="_blank">JavaScript for WordPress Master Course</a></strong> Zac Gordon</li>
 					<li><strong><a href="https://pippinsplugins.com/learn/" target="_blank">Learn Plugin Development</a></strong> - Pippin Williamson</li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Let's Build V-Pets!</h2>
+				<p>You've gained some foundational knowledge of WordPress, X Theme and Cornerstone.</p>
+				<p>Let's pause on the lectures for now, and take time to build out our Sample Page!</p>
+				<img src="images/exercise.gif" alt="Exercise Gif" width="200px">
+				<a href="https://trello.com/b/qVpE3Pqt/template-student-journey-phase-23-wordpress" target="_blank">
+				<img src="images/trello-logo-blue.png" alt="Trello Logo" width="200px">
 			</section>
 
 			<!-- froyo reordered to the end of the slides, right before spacecraft -->
@@ -1115,7 +1156,7 @@ selector {
 				<li>Learn more advanced plugins</li>
 				<li>Complete another project!</li>
 			</ul>
-		</section> -->
+		</section>
 
 		<section>
 			<h2>WordPress review</h2>
@@ -1165,7 +1206,7 @@ selector {
 				<li class="fragment">For now, the site only needs three pages: Home, About, and a blog page</li>
 				<li class="fragment">You are done with this exercise when you have 3 pages, a menu for the navbar, and you are ready to build in Cornerstone.</li>
 			</ul>
-		</section>
+		</section> -->
 
 		<!-- cut out all things JS for Website Development Module version 2021 -->
 		<!-- <section>
