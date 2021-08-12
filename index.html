@@ -747,6 +747,7 @@
 					<li class="fragment">Can be ridden over by content CSS</li>
 					<li class="fragment">Only place to use pure element selectors</li>
 					<li class="fragment">Great for setting typography and colors for the entire site</li>
+					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone.</li>
 				</ul>
 			</section>
 
@@ -815,22 +816,20 @@
 					<li class="fragment">Be sure to add classes to sections & elements.</li>
 					<li class="fragment">Thus, use custom CSS classes as your selectors.</li>
 					<li class="fragment">Style rules will only apply to selected content, not to the entire site.</li>
+					<li class="fragment">Your CSS may need <code class="aqua">!important</code> to override default styling built into Cornerstone.</li>
 				</ul>
 			</section>
 
 			<section>
 				<h2>Cornerstone Sidebar: Part 1</h2>
-				<!-- <p>Skeleton Mode is used most often and allows one to quickly jump to content on the page. Skeleten mode is also helpful for inspecting, duplicating or deleting content.</p> -->
 				<table>
 					<tr>
-						<!-- <th>Skeleton Mode</th> -->
 						<th>History</th>
 						<th>Dock Bottom</th>
 						<th>Dock Popout</th>
 						<th>Dock Hidden</th>
 					</tr>
 					<tr>
-						<!-- <td><img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/cornerstone-skeleton.png" alt="Skeleton Mode in Cornerstone"></td> -->
 						<td><img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/cornerstone-history.jpg" alt="History in Cornerstone"></td>
 						<td><img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/cornerstone-bottom-dock.jpg" alt="Dock on Bottom in Cornerstone"></td>
 						<td><img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/cornerstone-popout-dock.jpg" alt="Dock Popout in Cornerstone"></td>
@@ -862,8 +861,10 @@
 			</section>
 
 			<section id="building-page-jump-link">
-				<h2>Building a Page</h2>
-				<table>
+				<h2>Cornerstone Panel</h2>
+				<h3>Building a Page</h3>
+				<p>The left panel in Cornerstone helps us build our pages and has 3 helpful tabs:</p>
+				<table class="fragment">
 					<tr>
 						<th>Layout</th>
 						<th>Elements</th>
@@ -875,11 +876,34 @@
 						<td><img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in" src="images/inspector-cornerstone.jpg" alt="Inspector tab in Cornerstone"></td>
 					</tr>
 				</table>
-				<ul>
-					<li>Layout - to add sections, rows, columns</li>
-					<li>Elements - to add HTML elements</li>
-					<li>Inspector - to customize with classes, hide breakpoints</li>
+				<ul class="fragment">
+					<li><b class="yellow">Layout</b> - to add sections, rows, columns</li>
+					<li><b class="yellow">Elements</b> - to add HTML elements</li>
+					<li><b class="yellow">Inspector</b> - to customize with classes, hide breakpoints</li>
 				</ul>
+			</section>
+
+			<section>
+				<h2>Cornerstone Panel: Layout</h2>
+				<p>To build a page, we must start with the <b class="yellow">Layout</b> tab.</p>
+				<ul>The <b class="yellow">Layout</b> tab enables us to:
+					<li>add sections</li>
+					<li>save or upload templates</li>
+					<li>view the "skeleton" mode</li>
+				</ul>
+				<p><b class="yellow">Layout</b> is the default tab when we first open Cornerstone.</p>
+			</section>
+
+			<section>
+				<h2>Layout: Sections</h2>
+				<p>All content must be contained in sections.</p>
+				<ul>
+					<li class="fragment">Sections are containers for rows.</li>
+					<li class="fragment">Rows are containers for columns.</li>
+					<li class="fragment">Columns are containers for Elements.</li>
+				</ul>
+				<p class="fragment">Does "container", "row" and "column" ring a bell?<br><span class="fragment yellow">Yes, Cornerstone has a built-in grid system!</span></p>
+				<p class="fragment">Thus, in order to add HTML elements to our page, we must have at least a section, row, and column.</p>
 			</section>
 
 			<section>
@@ -892,59 +916,31 @@
 				<ol style="float:right; width: 70%;">
 					<li class="fragment">Add sections from scratch or from saved templates.</li>
 					<li class="fragment">Give your section an appropriate name: "Home Section"</li>
-					<li class="fragment">Click the inspect icon for section formatting.</li>
-					<li class="fragment">Sections are containers for rows.</li>
-					<li class="fragment">Rows are containers for columns.</li>
-					<li class="fragment">Columns are containers for Elements.</li>
-					<li class="fragment">Once a section has children, the <b class="yellow">Layout</b> tab will display the section with dropdown arrow to view all its children.</li>
+					<li class="fragment">Click the inspect icon to format.</li>
+					<li class="fragment">You can now add a row.</li>
+					<li class="fragment">Inspect the row to format its child column(s).</li>
+					<li class="fragment">With columns set, Elements can be dragged and dropped into them.</li>
+					<li class="fragment">The section's dropdown arrow can now display all its nested children, aka <b class="yellow">skeleton mode</b>.</li>
 				</ol>
 			</section>
 
 			<section>
-				<h2>Elements</h2>
-				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/element-cornerstone.jpg" alt="Elements in Cornerstone">
-				<ul>
-					<li class="fragment">Super easy way to add sliders, images, text, accordions, and so much more!</li>
-					<li class="fragment">Simply drag and drop the element you would like to use to the section on your page</li>
-					<li class="fragment">You can always add classes and styling with CSS</li>
-					<li class="fragment">Rule of thumb: try to find an element that will work for your project, before you resort to building a content area</li>
-				</ul>
-				<a class="fragment" href="https://drive.google.com/open?id=1VkjkGEK2KJr7f4hq0mK5BpaSiBrVjaJH" target="_blank">Watch here!</a>
+				<h2>Layout: Row, Columns, Breakpoints</h2>
+				<p>Once a row is added, you can designate how skinny or wide its child columns are. You can even give custom widths to the columns.</p>
+				<p>Rows have built-in breakpoints. Use this feature first!</p>
+				<p>Only when the built-in styling fails should you add your own Media Queries in Content CSS. More on this later.</p>
 			</section>
 
 			<section>
-				<h2>Inspector: Naming Conventions</h2>
-				<img class="fragment" data-enlargable height="200" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/home-hero-image-class.png" alt="How to Add a Class in Customizer">
-				<ul style="width: 60%; float: right;">
-					<li class="fragment">Always give sections a class, and use the name of the page + the section, e.g. class="about-hero-section"</li>
-					<li class="fragment">Choose a name that lets developers know what the content is, not the styling.</li>
-					<li class="fragment">Use classes, not ID's</li>
-				</ul>
+				<h2>Layout: Skeleton Mode</h2>
+				<p><b class="yellow">Skeleton mode</b> is helpful for easily naming/renaming, duplicating, moving and removing sections and any child(ren).</p>
+				<p>Skeleton mode also allows us to quickly jump to different content on the page.</p>
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/cornerstone-skeleton.jpg" alt="Skeleton Mode in Cornerstone">
 			</section>
 
 			<section>
-				<h2>Content Areas</h2>
-				<ul>
-					<li class="fragment">Need to add some custom HTML to your page?</li>
-					<li class="fragment">Content areas to the rescue!</li>
-					<li class="fragment">Content areas are also what you will use to add shortcodes to your page</li>
-					<li class="fragment">Use content areas when there is not an element that will work</li>
-					<li class="fragment">Great for lists & tables</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>Responsive Design</h2>
-				<ul>
-					<li class="fragment">Figuring out the size of the design is important!</li>
-					<li class="fragment">Build scaffolding first</li>
-					<li class="fragment">How many columns will each device use?</li>
-				</ul>
-				<p><a class="fragment" href="https://drive.google.com/open?id=17dmGtW6TZPuhxqbsKd7lH_nclcxiB0EF" target="_blank">Watch here!</a></p>	
-			</section>
-
-			<section>
-				<h2>Templates: Cloning Pages</h2>
+				<h2>Layout: Templates</h2>
+				<h3>Cloning Pages</h3>
 				<p>While Skeleton Mode is helpful for duplicating things <b>within</b> a page, if we want to apply the same content and its presentation to other pages we will utilize Templates.</p>
 				<ol>
 					<li>In <span style="color: yellow;">Layout</span> tab, click Save Template button.</li>
@@ -961,12 +957,56 @@
 						<th>Step 4</th>
 					</tr>
 					<tr>
-						<td><img data-enlargable height="100" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-save-template.png" alt="Save Template button"></td>
-						<td><img data-enlargable height="100" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-name-template.png" alt="Name the Template to Save the Template"></td>
-						<td><img data-enlargable height="100" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-load-template.png" alt="Load Template button"></td>
-						<td><img data-enlargable height="100" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-insert-template.png" alt="Insert the Template"></td>
+						<td><img data-enlargable height="80" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-save-template.png" alt="Save Template button"></td>
+						<td><img data-enlargable height="80" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-name-template.png" alt="Name the Template to Save the Template"></td>
+						<td><img data-enlargable height="80" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-load-template.png" alt="Load Template button"></td>
+						<td><img data-enlargable height="80" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/layout-insert-template.png" alt="Insert the Template"></td>
 					</tr>
 				</table>
+			</section>
+
+			<section>
+				<h2>Elements</h2>
+				<img data-enlargable height="100" style="border: 5px solid blue; cursor: zoom-in;" src="images/element-cornerstone.jpg" alt="Elements in Cornerstone">
+				<ul>
+					<li class="fragment">Super easy way to add sliders, images, text, accordions, and so much more!</li>
+					<li class="fragment">Simply drag and drop the element you would like to use to the section on your page.</li>
+					<li class="fragment">You can always add classes and styling with CSS.</li>
+					<li class="fragment">Rule of thumb: try to find an element that will work for your project, before you resort to building a content area.</li>
+				</ul>
+				<a class="fragment" href="https://drive.google.com/open?id=1VkjkGEK2KJr7f4hq0mK5BpaSiBrVjaJH" target="_blank">Watch here!</a>
+			</section>
+
+			<section>
+				<h2>Elements: Content Area</h2>
+				<p>The "Content Area" or "Raw Content" element (depends on the version of Cornerstone allows us to:</p>
+				<ul>
+					<li class="fragment">add custom HTML</li>
+					<li class="fragment">add plugin shortcodes</li>
+					<li class="fragment">create elements where Cornerstone elements fall short or do not work</li>
+					<li class="fragment">add great lists and tables</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Inspector: Naming Conventions</h2>
+				<img class="fragment" data-enlargable height="200" style="float: left; border: 5px solid blue; cursor: zoom-in" src="images/home-hero-image-class.png" alt="How to Add a Class in Customizer">
+				<ul style="width: 60%; float: right;">
+					<li class="fragment">Always give sections a class, and use the name of the page + the section, e.g. class="about-hero-section"</li>
+					<li class="fragment">Choose a name that lets developers know what the content is, not the styling.</li>
+					<li class="fragment">Use classes, not ID's</li>
+					<li class="fragment">Inspector is incredibly helpful for naming content area elements!</li>
+				</ul>
+			</section>
+			
+			<section>
+				<h2>Responsive Design</h2>
+				<ul>
+					<li class="fragment">Figuring out the size of the design is important!</li>
+					<li class="fragment">Build scaffolding first</li>
+					<li class="fragment">How many columns will each device use?</li>
+				</ul>
+				<p><a class="fragment" href="https://drive.google.com/open?id=17dmGtW6TZPuhxqbsKd7lH_nclcxiB0EF" target="_blank">Watch here!</a></p>	
 			</section>
 
 			<section>
@@ -976,6 +1016,17 @@
 					<li class="fragment">From there, you can use proportions to figure out what size everything should be.</li>
 				</ul>
 				<p class="fragment">Click <a href="https://xd.adobe.com/spec/bc9b3a69-f07c-44cc-7124-b191b5239f0a-caaa/" target="_blank" >here</a> to see a sample design!</p>
+			</section>
+
+			<section>
+				<h2>Build Mobile First</h2>
+				<ol>Design assets often include a mobile design.
+					<li>Have the designs open for comparison and contrast.</li>
+					<li>Build one section at a time.</li>
+					<li>See how the section changes across screen sizes.</li>
+					<li>Use the Layout tab to designate breakpoints for the row.</li>
+					<li>Only when the row's built-in breakpoints fail should you add Media Queries to your Content CSS (more on this later).</li>
+				</ol>
 			</section>
 
 			<!-- <section>
@@ -997,6 +1048,17 @@
 					<li class="fragment">Luckily, you can use your dev tools to figure out the class names that are added by Cornerstone!</li> 
 				</ul>
 				<p><a href="https://drive.google.com/open?id=1gHiuifcxsil1TdQMlAFHyDnFM1FjL8Uv" target="_blank" class="fragment">Watch here!</a></p> 
+			</section>
+
+			<section>
+				<h2>Dev Tools vs. Cornerstone Styling</h2>
+				<p>Sometimes no matter how you test the styling of a selector in Dev Tools and apply it in the Global CSS or Content CSS for that selector, NOTHING changes!</p>
+				<p class="fragment">If you have the correct selector and its style DOES change in the Dev Tools site preview and DOES NOT change in Cornerstone, then it is time to use <code class="aqua">!important</code> to override default styling built into Cornerstone.</p>
+<pre class="fragment"><code class="css" data-trim contenteditable>
+selector {
+  property: value !important;
+}
+</code></pre>
 			</section>
 			
 			<section>
