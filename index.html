@@ -928,7 +928,7 @@
 				<h2>Layout: Row, Columns, Breakpoints</h2>
 				<p>Once a row is added, you can designate how skinny or wide its child columns are. You can even give custom widths to the columns.</p>
 				<p>Rows have built-in breakpoints. Use this feature first!</p>
-				<p>Only when the built-in styling fails should you add your own Media Queries in Content CSS. More on this later.</p>
+				<p>Only when the built-in styling fails should you next Inspect the item to Customize; if that fails, then add Media Queries. More on this later.</p>
 			</section>
 
 			<section>
@@ -1025,14 +1025,21 @@
 					<li>Build one section at a time.</li>
 					<li>See how the section changes across screen sizes.</li>
 					<li>Use the Layout tab to designate breakpoints for the row.</li>
-					<li>Only when the row's built-in breakpoints fail should you add Media Queries to your Content CSS (next slide).</li>
+					<li>Only when the row's built-in breakpoints fail should you next Inspect the item to Customize; if that fails, then add Media Queries.</li>
 				</ol>
 			</section>
 
-			<!-- <section>
-				<h2>Media Queries in Content CSS</h2>
-				<p>To only alter the breakpoints for a page, you will want to open the Content CSS and insert media queries:</p>
-<pre class="fragment"><code class="css" data-trim contenteditable>
+		    <section>
+				<h2>Media Queries</h2>
+				<p>Breakpoints are built into Cornerstone's sections, rows, columns, elements.</p>
+				<ol>
+					<li>Use the built-in defaults in Layout first.</li>
+					<li>If Layout fails, then Inspect to Customize the breakpoint visibility.</li>
+					<li>If that fails, give the item a class.</li>
+					<li>If the item is global, enter its Media Queries in Global CSS.</li>
+					<li>If the item is specific to a page, enter its Media Queries in Content CSS.</li>
+				</ol>
+<!-- <pre class="fragment"><code class="css" data-trim contenteditable>
 /* Tablet */
 @media screen and (min-width: 768px) {
   selector {
@@ -1058,8 +1065,8 @@
     property: value;
   }
 }
-</code></pre>
-			</section> -->
+</code></pre>-->
+			</section>
 
 			<!-- <section>
 				<h2>Where to go from here?</h2>	
